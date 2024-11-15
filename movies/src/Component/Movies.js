@@ -63,9 +63,9 @@ const Movies = () => {
   };
 
   return (
-    <Box sx={{ background: "#0E0E15" ,m:0}}>
+    <Box sx={{ background: "#0E0E15", m: 0 }}>
       <hr style={{ border: "3px solid red" }}></hr>
-      <Container maxWidth="lg" sx={{ background: "#0E0E15",p:{lg:8,sm:5}}}>
+      <Container maxWidth="lg" sx={{ background: "#0E0E15", p: { lg: 8, sm: 5 } }}>
         <TextField
           value={searchTitle}
           onChange={handleSearchChange}
@@ -83,11 +83,10 @@ const Movies = () => {
               <Grid item xs={12} sx={12} lg={3} >
                 <Grid container>
 
-                  <Grid item xs={8} sx={8} lg={8} >
-
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2,ml:4, mt: {lg:20,sm:0} }}>
+                  <Grid item xs={8} sx={8} lg={8}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, ml: 4, mt: { lg: 20, sm: 0 } }}>
                       <Like onLike={() => handleLike(movie.id)} sx={{ mt: 1 }} />
-                      <Typography sx={{fontSize:"30px",color:"white"}}>{movie.like}</Typography>
+                      <Typography sx={{ fontSize: "30px", color: "white" }}>{movie.like}</Typography>
                       <Dislike onDisike={() => handleDisLike(movie.id)} />
                     </Box>
                   </Grid>

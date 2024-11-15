@@ -1,4 +1,4 @@
-import { Grid, Container, Typography, CardMedia, CardContent } from '@mui/material';
+import { Grid, Container, Typography, CardMedia} from '@mui/material';
 function MovieRow({ moviesRowData }) {
     const baseImageUrl = 'https://image.tmdb.org/t/p/w500';
     return (
@@ -22,7 +22,6 @@ function MovieRow({ moviesRowData }) {
                     </Typography>
                 </Grid>
             </Grid>
-
         </>
     )
 }
